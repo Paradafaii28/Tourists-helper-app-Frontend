@@ -19,27 +19,17 @@ class App extends Component {
       .then(continents => this.setState({continents}))
   }
 
-  showContinents = () => this.state.continents.map(continent => (
-      <li key={continent.id} className="all-card">
-        <img src= {continent.image_url}/>
-      </li> 
-    ))
-  
-
   render(){
   return (
     <Router>
       <div className="App"> 
-      <h1 className="title-app"><img src = "https://i.ibb.co/MCr58nh/Handdrawn-Circle-Logo.png" /> GETAWAY</h1>
+         <h1 className="title-app"><img src = "https://i.ibb.co/MCr58nh/Handdrawn-Circle-Logo.png" className="logo-pics"/> GETAWAY</h1>
         <CostomNavbar/>
-        <Route exact path="/" component={Home} />
-        <Route path="/destination" component={Destination} />
-        <Route path="/blogging" component={Blogging} />
-      <section>
-        <ul className="continents-list">
-            {this.showContinents()}
-        </ul>
-      </section>
+        <Route exact path='/'>
+          <Home continents={this.state.continents}/> 
+        </Route>
+        <Route path='/destination' component={Destination} />
+        <Route path='/blogging' component={Blogging} />
       </div>
       </Router> 
     );
