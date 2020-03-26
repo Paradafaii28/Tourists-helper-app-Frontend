@@ -46,6 +46,7 @@ img:hover {
   margin-top: 20px;
   margin-bottom: 40px;
   overflow: hidden;
+  list-style-type: none;
 }
 
 .all-card img {

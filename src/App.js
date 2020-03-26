@@ -28,7 +28,7 @@ class App extends Component {
         <Route exact path='/'>
           <Home continents={this.state.continents}/> 
         </Route>
-        <Route path='/destination' component={Destination} />
+        <Route path='/destination/:id' render={(props) => <Destination continents={this.state.continents} {...props}/>} />
         <Route path='/blogging' component={Blogging} />
       </div>
       </Router> 
