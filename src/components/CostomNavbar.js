@@ -74,27 +74,6 @@ export default function ScrollableTabsButtonAuto() {
           </Link>
         </Tabs>
       </AppBar>
-      {/* <TabPanel value={value} index={0}>
-        Home
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Destination
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Blogging
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
-      </TabPanel> */}
     </div>
   );
 }

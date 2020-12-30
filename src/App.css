@@ -7,13 +7,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 } 
-.logo-pics {
-  opacity: unset;
-  box-shadow: 0 6px 15px 6px rgb(209, 209, 209); 
-}
 
+img {
+  border-radius: 15px;
+}
 img:hover {
-  opacity: 1.0;
+  opacity: 0.5;
 } 
 
 .title-app {
@@ -47,10 +46,6 @@ img:hover {
 .all-card img {
   width: 300px;
   height: 350px;
-  box-shadow: 0 6px 15px 6px rgb(92, 90, 90);
-  margin-bottom: 40px;
-  overflow: hidden;
-
 }
 
 
