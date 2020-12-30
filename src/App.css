@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-  background-image: url(https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-color: lightgray;
   background-size: 2200px 800px;
   background-image: cover;
   background-repeat: no-repeat;
@@ -10,11 +10,6 @@ body {
 .logo-pics {
   opacity: unset;
   box-shadow: 0 6px 15px 6px rgb(209, 209, 209); 
-}
-
-img {
-  width: 7rem;
-  opacity: 0.5;
 }
 
 img:hover {

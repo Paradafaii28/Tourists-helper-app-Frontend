@@ -23,7 +23,7 @@ class App extends Component {
   return (
     <Router>
       <div className="App"> 
-         <h1 className="title-app"><img src = "https://i.ibb.co/MCr58nh/Handdrawn-Circle-Logo.png" className="logo-pics"/> GETAWAY</h1>
+        <h1 className="title-app">GETAWAY</h1>
         <CostomNavbar/>
         <Route exact path='/'>
           <Home continents={this.state.continents}/> 
@@ -31,7 +31,7 @@ class App extends Component {
         <Route path='/destination/:id' render={(props) => <Destination continents={this.state.continents} {...props}/>} />
         <Route path='/blogging' component={Blogging} />
       </div>
-      </Router> 
+    </Router> 
     );
   }
 }
