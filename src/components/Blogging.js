@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MultilineTextFields() {
   const classes = useStyles();
-  const [value, setValue] = React.useState('Controlled');
+  const [value, setValue] = React.useState('Title');
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -25,7 +25,7 @@ export default function MultilineTextFields() {
       <div>
         <TextField
           id="outlined-multiline-flexible"
-          label="Multiline"
+          label="Title"
           multiline
           rowsMax={4}
           value={value}
@@ -34,17 +34,17 @@ export default function MultilineTextFields() {
         />
         <TextField
           id="outlined-textarea"
-          label="Multiline Placeholder"
-          placeholder="Placeholder"
+          label="Author"
+          placeholder="Author"
           multiline
           variant="outlined"
         />
         <TextField
           id="outlined-multiline-static"
-          label="Multiline"
+          label="Description"
           multiline
           rows={4}
-          defaultValue="Default Value"
+          defaultValue=""
           variant="outlined"
         />
       </div>
