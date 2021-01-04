@@ -7,6 +7,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import {Link} from 'react-router-dom';
+import './CostomNavbar.css'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,6 +45,10 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     backgroundColor: theme.palette.background.paper,
   },
+  link: {
+    color: "black",
+    textDecoration: "none"
+  }
 }));
 
 export default function ScrollableTabsButtonAuto() {
@@ -66,10 +71,16 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
         >
-          <Link to="/">
+          <Link  
+            to="/" 
+            className={classes.link}
+          >
             <Tab label="Home" {...a11yProps(0)} />
           </Link>
-          <Link to="/blogging">
+          <Link 
+            to="/blogging"
+            className={classes.link}
+          >
             <Tab label="Blogging" {...a11yProps(2)} />
           </Link>
         </Tabs>
